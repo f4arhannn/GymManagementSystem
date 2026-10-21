@@ -43,7 +43,6 @@ public class home extends javax.swing.JFrame {
         jMenu1 = new javax.swing.JMenu();
         jMenu2 = new javax.swing.JMenu();
         jMenu3 = new javax.swing.JMenu();
-        jMenu4 = new javax.swing.JMenu();
         jMenu5 = new javax.swing.JMenu();
         jMenu6 = new javax.swing.JMenu();
 
@@ -86,6 +85,11 @@ public class home extends javax.swing.JFrame {
         jMenu2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/update & delete member.png"))); // NOI18N
         jMenu2.setText("Update & Delete Member");
         jMenu2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jMenu2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jMenu2MouseClicked(evt);
+            }
+        });
         jMenuBar1.add(jMenu2);
 
         jMenu3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/list of members.png"))); // NOI18N
@@ -97,11 +101,6 @@ public class home extends javax.swing.JFrame {
             }
         });
         jMenuBar1.add(jMenu3);
-
-        jMenu4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/payment.png"))); // NOI18N
-        jMenu4.setText("Payment");
-        jMenu4.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jMenuBar1.add(jMenu4);
 
         jMenu5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/logout.png"))); // NOI18N
         jMenu5.setText("Logout");
@@ -170,6 +169,11 @@ public class home extends javax.swing.JFrame {
         new ListOfMember().setVisible(true);
     }//GEN-LAST:event_jMenu3MouseClicked
 
+    private void jMenu2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jMenu2MouseClicked
+        // TODO add your handling code here:
+        new UpdateDeleteMember().setVisible(true);
+    }//GEN-LAST:event_jMenu2MouseClicked
+
     /**
      * @param args the command line arguments
      */
@@ -200,7 +204,6 @@ public class home extends javax.swing.JFrame {
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu3;
-    private javax.swing.JMenu jMenu4;
     private javax.swing.JMenu jMenu5;
     private javax.swing.JMenu jMenu6;
     private javax.swing.JMenuBar jMenuBar1;

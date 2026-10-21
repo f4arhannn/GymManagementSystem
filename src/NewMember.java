@@ -62,10 +62,11 @@ public class NewMember extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
 
         jButton1.setBackground(new java.awt.Color(0, 116, 211));
+        jButton1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/delete.png"))); // NOI18N
         jButton1.addActionListener(this::jButton1ActionPerformed);
 
-        jLabel2.setFont(new java.awt.Font("Algerian", 1, 48)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Tahoma", 1, 48)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(0, 118, 211));
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/new member.png"))); // NOI18N
         jLabel2.setText("New Member");
@@ -157,6 +158,8 @@ public class NewMember extends javax.swing.JFrame {
         jTextField7.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jTextField7.setForeground(new java.awt.Color(0, 118, 221));
 
+        jLabel13.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel13.setForeground(new java.awt.Color(0, 118, 221));
         jLabel13.setText("Amount to pay/month");
 
         jTextField8.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
@@ -169,8 +172,9 @@ public class NewMember extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 644, Short.MAX_VALUE)
-                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 385, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 638, Short.MAX_VALUE)
+                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 385, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(16, 16, 16)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -263,7 +267,7 @@ public class NewMember extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton2)
                     .addComponent(jButton3))
-                .addGap(0, 99, Short.MAX_VALUE))
+                .addGap(0, 103, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
